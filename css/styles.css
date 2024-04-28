@@ -32,7 +32,7 @@ address {
 }
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .visually-hidden {
@@ -424,8 +424,11 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    width: 296px;
+}
+.team-title-text {
+    padding: 32px 0;
+    text-align: center;
 }
 .team-name {
     font-weight: 500 ;
