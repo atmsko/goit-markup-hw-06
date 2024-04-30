@@ -197,6 +197,9 @@ img {
     pointer-events: none;
     z-index: 999;
 }
+.all-adr-link {
+    margin-top: auto;
+}
 .menu-close-btn {
     /* display: block; */
     /* margin-left: auto; */
@@ -260,6 +263,7 @@ img {
     flex-direction: column;
     gap: 24px;
     font-style: normal;
+    margin-bottom: 48px;
 }
 .mob-menu-address-link-mail {
     font-weight: 500;
@@ -1086,7 +1090,7 @@ transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1128px;
+        width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
     }
