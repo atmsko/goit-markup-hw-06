@@ -61,8 +61,8 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    /* padding-top: 16px; */
+    /* padding-bottom: 16px; */
 }
 .header-container {
     /* height: 56px; */
@@ -224,6 +224,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-top: 72px;
     margin-bottom: auto;
   
 }
@@ -250,10 +251,6 @@ img {
     color: #2e2f42;
 }
 .mob-menu-address-list {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 24px; */
-    margin-bottom: 48px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -970,7 +967,7 @@ transform: translate(-50%, -50%);
         color: #404bbf;
     }
     .address-list {
-        display: flex;
+        display: block;
         /* flex-direction: column; */
         /* gap: 40px; */
         gap: 12px;
@@ -994,7 +991,10 @@ transform: translate(-50%, -50%);
         display: none;
     }
     .address {
-        display: block;
+        display: flex;
+            flex-direction: column;
+            gap: 24px;
+            font-style: normal;
     }
     .slogan-title {
         font-size: 56px;
@@ -1077,13 +1077,20 @@ transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1157px;
+        width: 1128px;
         padding: 0 15px;
         margin: 0 auto;
     }
     .header-logo {
             margin-right: 76px;
     }  
+    .address {
+        display: flex;
+        display: col;
+            gap: 40px;
+            padding: 0;
+            margin: 0;
+    }
     .address-list {
         flex-direction: row;
         gap: 40px;
@@ -1177,8 +1184,12 @@ transform: translate(-50%, -50%);
         opacity: 1;
     }
     .subscribe {
-        margin-top: 0;
-        margin-left: auto;
+        align-items: baseline;
+            flex-wrap: wrap;
+            justify-content: start;
+            margin-left: auto;
+        /* margin-top: 0; */
+        /* margin-left: 80px; */
     }
     .modal-input {
         padding-left: 38px;
